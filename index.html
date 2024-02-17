@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aim Trainer Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Aim Trainer</h1>
+      <button class="btn" id="start">Start Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>Choose Time</h1>
+      <ul class="list" id="timer">
+        <li>
+          <button class="btn time-btn" data-time="10">10 secs</button>
+        </li>
+
+        <li>
+          <button class="btn time-btn" data-time="30">30 secs</button>
+        </li>
+
+        <li>
+          <button class="btn time-btn" data-time="60">1 mins</button>
+        </li>
+
+        <li>
+          <button class="btn time-btn" data-unlimited="true">unlimited</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <h1>Choose Difficulty</h1>
+      <ul class="list" id="difficulty">
+        <li>
+          <button class="btn difficulty-btn" data-difficulty="1">Easy</button>
+        </li>
+
+        <li>
+          <button class="btn difficulty-btn" data-difficulty="2">Medium</button>
+        </li>
+
+        <li>
+          <button class="btn difficulty-btn" data-difficulty="3">Hard</button>
+        </li>
+
+        <li>
+          <button class="btn difficulty-btn hell" data-difficulty="4">
+            Hell
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <div class="stats">
+        <div class="info">
+          <p>Time: <span id="time">00:00</span></p>
+          <p>Target Hits: <span id="hits">0</span></p>
+          <p>Accuracy: <span id="accuracy">100%</span></p>
+        </div>
+        <div class="lives">
+          <img src="heart.webp" alt="heart" class="life dead" />
+          <img src="heart.webp" alt="heart" class="life dead" />
+          <img src="heart.webp" alt="heart" class="life dead" />
+        </div>
+      </div>
+      <div class="board" id="board"></div>
+      <div class="circle"></div>
+      <div class="preference">
+        <button class="btn" id="fullscreen">Full Screen</button>
+        <button class="btn restart">Restart</button>
+        <button class="btn" id="minimize">Minimize Screen</button>
+      </div>
+    </div>
+
+    <div class="screen">
+      <h1>Game Over</h1>
+      <div class="results">
+        <p>Target Hits: <span id="hits-over">0</span></p>
+        <p>Accuracy: <span id="accuracy-over">0%</span></p>
+      </div>
+      <button class="btn restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

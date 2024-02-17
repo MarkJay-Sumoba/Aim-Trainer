@@ -2,6 +2,8 @@
 
 This is a simple Aim Trainer web application that allows users to practice their aiming skills by clicking on targets that appear on the screen.
 
+## ![Hero](hero.png 'Hero')
+
 ## How to Play
 
 1. Click the "Start Game" button to begin.
